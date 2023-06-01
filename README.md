@@ -120,7 +120,31 @@ console.log("KL">"S")
 ```
 
 ## Solution 4)
+If you run the following code:
 
+```javascript
+console.log("7" > 7);
+console.log("2" > "21");
+console.log("KL" > "S");
+```
+
+You will get the following output in the console:
+
+```
+false
+false
+false
+```
+
+Let's break down each comparison:
+
+1. `"7" > 7`: In this comparison, the string `"7"` is being compared with the number `7`. JavaScript performs type coercion and converts the string to a number, resulting in the expression `7 > 7`. Since 7 is not greater than 7 (it's equal), the result of this comparison is `false`.
+
+2. `"2" > "21"`: Here, two strings are being compared. When comparing strings, JavaScript compares them character by character based on their Unicode values. In this case, the first character of `"2"` is `"2"` and the first character of `"21"` is also `"2"`. Since the first characters are equal, JavaScript moves on to the next characters. Since there are no more characters in `"2"`, and `"21"` has an additional character, the string `"2"` is considered smaller than `"21"`. Therefore, `"2" > "21"` evaluates to `false`.
+
+3. `"KL" > "S"`: This comparison involves the strings `"KL"` and `"S"`. Similarly to the previous example, JavaScript compares the characters based on their Unicode values. The first character of `"KL"` is `"K"`, and the first character of `"S"` is `"S"`. In Unicode, `"K"` comes after `"S"`, so `"KL"` is considered greater than `"S"`. Thus, `"KL" > "S"` evaluates to `false`.
+
+To summarize, the first comparison evaluates to `false` because a string is not directly comparable to a number. The second comparison evaluates to `false` because `"2"` is considered smaller than `"21"` in the context of string comparison. The third comparison evaluates to `false` because `"KL"` is considered smaller than `"S"` in the context of string comparison based on Unicode values.
 
 ---
 ## Problem 5)
