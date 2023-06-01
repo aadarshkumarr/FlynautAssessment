@@ -6,9 +6,11 @@ Flynaut Full Stack Developer Assessment
 ![developer](https://img.shields.io/badge/Developed%20By-Aadarsh%20Kumar-red)
 ---
 ## Problem 1)
-find duplicate and same values in two array 
+```
+// Find duplicate and same values in two array 
 var fullWordList = ['1','2','3','4','5']; 
 var wordsToRemove = ['1','2','3']; 
+```
 
 ## Solution 1):
 To find duplicate and same values in two arrays, we can compare the elements of the arrays and identify the common values. 
@@ -34,9 +36,10 @@ The `filter()` method is used to iterate over the `fullWordList` array and keep 
 
 ---
 ## Problem 2)
-longest-chain-of-letters-in-word-javascript 
+```
+// Longest-chain-of-letters-in-word-javascript 
 const word = '00000111110101001111100001001'
-
+```
 
 ## Solution 2)
 To find the longest chain of consecutive letters in a word, we can iterate over the characters of the word and keep track of the current chain length and the maximum chain length encountered.
