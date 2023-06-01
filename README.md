@@ -143,7 +143,7 @@ Let's break down each comparison:
 
 3. `"KL" > "S"`: This comparison involves the strings `"KL"` and `"S"`. Similarly to the previous example, JavaScript compares the characters based on their Unicode values. The first character of `"KL"` is `"K"`, and the first character of `"S"` is `"S"`. In Unicode, `"K"` comes after `"S"`, so `"KL"` is considered greater than `"S"`. Thus, `"KL" > "S"` evaluates to `false`.
 
-To summarize, the first comparison evaluates to `false` because a string is not directly comparable to a number. The second comparison evaluates to `false` because `"2"` is considered smaller than `"21"` in the context of string comparison. The third comparison evaluates to `false` because `"KL"` is considered smaller than `"S"` in the context of string comparison based on Unicode values.
+The first comparison evaluates to `false` because a string is not directly comparable to a number. The second comparison evaluates to `false` because `"2"` is considered smaller than `"21"` in the context of string comparison. The third comparison evaluates to `false` because `"KL"` is considered smaller than `"S"` in the context of string comparison based on Unicode values.
 
 ---
 ## Problem 5)
