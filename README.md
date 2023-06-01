@@ -6,7 +6,7 @@ Flynaut Full Stack Developer Assessment
 ![developer](https://img.shields.io/badge/Developed%20By-Aadarsh%20Kumar-red)
 ---
 ## Problem 1)
-```
+```javascript
 // Find duplicate and same values in two array 
 var fullWordList = ['1','2','3','4','5']; 
 var wordsToRemove = ['1','2','3']; 
@@ -36,7 +36,7 @@ The `filter()` method is used to iterate over the `fullWordList` array and keep 
 
 ---
 ## Problem 2)
-```
+```javascript
 // Longest-chain-of-letters-in-word-javascript 
 const word = '00000111110101001111100001001'
 ```
@@ -113,34 +113,40 @@ You will get the following output in the console:
 
 ---
 ## Problem 4)
+```javascript
 console.log("7" > 7) 
 console.log("2">"21") 
 console.log("KL">"S") 
+```
 
 ## Solution 4)
 
 
 ---
 ## Problem 5)
- function average(a, b) { 
+```javascript
+function average(a, b) { 
 return a + b / 2; 
 } 
 console.log(average(2, 1)); 
-
+```
 
 
 ## Solution 5)
-function arrayAverage(arr){
-    //Find the sum
-    var sum = 0;
-    for(var i in arr) {
-        sum += arr[i];
-    }
-    //Get the length of the array
-    var numbersCnt = arr.length;
-    //Return the average / mean.
-    return (sum / numbersCnt);
+The function `average(a, b)` in the provided code calculates the average of two numbers `a` and `b`. However, there is a precedence issue in the code due to the incorrect placement of parentheses. To fix this issue and calculate the average correctly, the code should be modified as follows:
+
+```javascript
+function average(a, b) {
+  return (a + b) / 2;
 }
-var arr = new Array(2, 10, 9, 6, 12, 3);
-var avg = arrayAverage(arr);
-console.log(avg);
+
+console.log(average(2, 1));
+```
+
+When you run this modified code, it will output:
+
+```
+1.5
+```
+
+The corrected code correctly calculates the average of `a` and `b` by first adding `a` and `b` together using parentheses `(a + b)` and then dividing the sum by 2 using the `/` operator. In the example provided, `average(2, 1)` returns `1.5` as the average of 2 and 1 is 1.5.
