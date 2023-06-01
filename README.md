@@ -64,7 +64,7 @@ for (let i = 0; i < word.length; i++) {
 console.log("Longest chain of consecutive letters:", maxChainLength);
 ```
 
-When you run this code, it will output:
+Output:
 
 ```
 Longest chain of consecutive letters: 5
@@ -83,7 +83,6 @@ console.log(obj2);
 ```
 
 ## Solution 3)
-If you run the following code:
 
 ```javascript
 let obj1 = { "greeting": "hello" };
@@ -93,7 +92,7 @@ console.log(obj1);
 console.log(obj2);
 ```
 
-You will get the following output in the console:
+Output:
 
 ```
 { greeting: 'Bye' }
@@ -120,7 +119,7 @@ console.log("KL">"S")
 ```
 
 ## Solution 4)
-If you run the following code:
+
 
 ```javascript
 console.log("7" > 7);
@@ -128,7 +127,7 @@ console.log("2" > "21");
 console.log("KL" > "S");
 ```
 
-You will get the following output in the console:
+Output:
 
 ```
 false
@@ -167,7 +166,7 @@ function average(a, b) {
 console.log(average(2, 1));
 ```
 
-When you run this modified code, it will output:
+Output:
 
 ```
 1.5
